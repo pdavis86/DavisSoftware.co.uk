@@ -8,6 +8,27 @@ img{
   max-height: 100%;
 }
 
+a {
+  display: inline-block; /*avoid underlining line feeds*/
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color:#6938d2;
+}
+
+a:hover {
+  color:#d27838;
+}
+
+a:active {
+  color:#d27838
+}
+
+
 
 
 .u-center {
@@ -16,8 +37,9 @@ img{
 
 
 .page-container {
+  color: white;
+  margin: auto;
   max-width: 45em;
-  margin: auto!important;
 }
 
 .main-header {
@@ -26,9 +48,11 @@ img{
 }
 
 .grad-main {
-  background: #0fb8ad; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(135deg, #0fb8ad 0%, #1fc8db 51%), #2cb5e8 75%; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(135deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(135deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(135deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); /* Standard syntax */
+  background: #38d29c; /* For browsers that do not support gradients */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38d29c), color-stop(51%,#1fc8db), color-stop(75%,#2cb5e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%), #2cb5e8 75%; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient(left, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* IE10+ */
+  background: linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* Standard syntax */
 }
