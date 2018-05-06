@@ -3,10 +3,10 @@ var minifyCSS = require('gulp-csso');
 const imagemin = require('gulp-imagemin');
 //var watch = require('gulp-watch');
 
-gulp.task('html', function(){
+/*gulp.task('html', function(){
   return gulp.src('src/html/*.html')
     .pipe(gulp.dest('build/'))
-});
+});*/
 
 gulp.task('css', function(){
   return gulp.src('src/styles/*.css')
@@ -26,7 +26,7 @@ gulp.task('images', function(){
     .pipe(gulp.dest('build/images'))
 });
 
-gulp.task('default', [ 'html', 'css', 'favicons', 'images' ]);
+gulp.task('default', [ 'css', 'favicons', 'images' ]);
 
 /*gulp.task('stream', function () {
   // Endless stream mode 
