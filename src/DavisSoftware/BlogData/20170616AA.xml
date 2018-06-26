@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BlogArticleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DateTime>2017-06-16T00:00:00</DateTime>
+  <Heading>Designing a hosted database infrastructure</Heading>
+  <Content>Mirroring
+	Upgrades
+	Backups
+	Maintenance</Content>
+</BlogArticleModel>

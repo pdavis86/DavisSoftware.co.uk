@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BlogData\20100604AA.xml" />
+    <Content Include="BlogData\20101108AA.xml" />
+    <Content Include="BlogData\20170308AA.xml" />
+    <Content Include="BlogData\20170616AA.xml" />
+    <Content Include="BlogData\20180115AA.xml" />
+    <Content Include="BlogData\20180608AA.xml" />
     <Content Include="Global.asax" />
     <Content Include="Content\images\favicons\android-chrome-144x144.png" />
     <Content Include="Content\images\favicons\apple-touch-icon.png" />
@@ -142,16 +148,18 @@
     <Content Include="Content\images\LinkedIn\In-Black-94px-R.png" />
     <Content Include="Content\images\LinkedIn\In-Black-94px-TM.png" />
     <Content Include="Content\images\PaulDavis.jpg" />
-    <Content Include="Content\styles\devices.css" />
     <Content Include="Content\styles\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Constants\Views.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BlogArticleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +170,7 @@
     <Content Include="Views\Pages\Index.cshtml" />
     <None Include="Properties\PublishProfiles\DavisSoftware - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\DavisSoftware - Web Deploy.pubxml" />
+    <Content Include="Views\Blog\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,9 +179,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\scripts\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

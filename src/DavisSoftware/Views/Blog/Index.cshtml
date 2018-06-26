@@ -1,0 +1,11 @@
+@model DavisSoftware.Models.BlogArticleModel
+@{ 
+    ViewData["title"] = "New title";
+    Layout = DavisSoftware.Constants.Views.Layouts.Main;
+}
+
+<h1>@Model.Heading</h1>
+<h4>@Model.DateTime.ToShortDateString()</h4>
+<div>
+    @Html.Raw(Model.Content)
+</div>
