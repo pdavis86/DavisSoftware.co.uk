@@ -17,17 +17,18 @@
     <meta name="msapplication-config" content="~/Content/images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!--if (HttpContext.Current.IsDebuggingEnabled) -->
-    <link rel="stylesheet" href="~/Content/styles/main.css" type="text/css">
-    @*<link rel="stylesheet" href="~/Content/styles/devices.css" type="text/css">*@
-    <!-- todo: elseuse minified versions -->
-
+    <link rel="stylesheet" href="~/Content/styles/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/styles/main.min.css" type="text/css">
 </head>
 
 <body class="grad-main">
-    <div class="page-container">
+    @Html.Partial(DavisSoftware.Constants.Views.Partials.Header)
+
+    <main class="content-wrapper">
         @RenderBody()
-    </div>
+    </main>
+
+    @Html.Partial(DavisSoftware.Constants.Views.Partials.Footer)
 </body>
 
 </html>

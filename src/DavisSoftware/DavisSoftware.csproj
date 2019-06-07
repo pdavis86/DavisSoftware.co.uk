@@ -95,6 +95,8 @@
     <Content Include="BlogData\20170616AA.xml" />
     <Content Include="BlogData\20180115AA.xml" />
     <Content Include="BlogData\20180608AA.xml" />
+    <Content Include="Content\styles\main.min.css" />
+    <Content Include="Content\styles\normalize.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\images\favicons\android-chrome-144x144.png" />
     <Content Include="Content\images\favicons\apple-touch-icon.png" />
@@ -148,7 +150,6 @@
     <Content Include="Content\images\LinkedIn\In-Black-94px-R.png" />
     <Content Include="Content\images\LinkedIn\In-Black-94px-TM.png" />
     <Content Include="Content\images\PaulDavis.jpg" />
-    <Content Include="Content\styles\main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -165,12 +166,17 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="Content\images\favicons\manifest.json" />
+    <Content Include="Content\styles\main.css.min.map" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Pages\Index.cshtml" />
     <None Include="Properties\PublishProfiles\DavisSoftware - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\DavisSoftware - Web Deploy.pubxml" />
     <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Shared\_Nav.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <None Include="SCSS\**" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,9 +184,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

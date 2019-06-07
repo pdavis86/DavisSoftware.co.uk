@@ -1,50 +1,21 @@
-body{
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1.2em;
-}
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-}
-
-a {
-  display: inline-block; /*avoid underlining line feeds*/
-}
-
 a:link {
-  color: black;
+    color: black;
 }
 
 a:visited {
-  color:#6938d2;
+    color: #6938d2;
 }
 
 a:hover {
-  color:#d27838;
+    color: #d27838;
 }
 
 a:active {
-  color:#d27838
+    color: blue;
 }
 
-
-
-
-.u-center {
-  text-align: center;
-}
-
-
-.page-container {
-  color: white;
-  margin: auto;
-  max-width: 45em;
-}
-
-.main-header {
-  padding: 40px 15px; 
-  text-align: center;
+a:focus {
+    color: blueviolet;
 }
 
 .grad-main {
@@ -55,4 +26,8 @@ a:active {
   background: -moz-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* For Firefox 3.6 to 15 */
   background: -ms-linear-gradient(left, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* IE10+ */
   background: linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* Standard syntax */
+}
+
+.content-wrapper {
+    color: white;
 }
