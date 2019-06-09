@@ -1,3 +1,19 @@
+$color-text-base: white;
+
+$color-background-grad1: #38d29c;
+$color-background-grad2: #1fc8db;
+$color-background-grad3: #2cb5e8;
+
+//https://www.canva.com/colors/color-wheel/
+$color-background-grad3-complimentary: #E85F2C;
+$color-background-grad3-chromatic: #169ACB;
+$color-background-grad3-analogous1: #2C57E8;
+$color-background-grad3-analogous2: #2CE8BD;
+
+body {
+    color: $color-text-base;
+}
+
 a:link {
     color: black;
 }
@@ -19,15 +35,35 @@ a:focus {
 }
 
 .grad-main {
-  background: #38d29c; /* For browsers that do not support gradients */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38d29c), color-stop(51%,#1fc8db), color-stop(75%,#2cb5e8)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%), #2cb5e8 75%; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* For Firefox 3.6 to 15 */
-  background: -ms-linear-gradient(left, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* IE10+ */
-  background: linear-gradient(135deg, #38d29c 0%, #1fc8db 51%, #2cb5e8 75%); /* Standard syntax */
+    background: $color-background-grad1; /* For browsers that do not support gradients */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-background-grad1), color-stop(51%,$color-background-grad2), color-stop(75%,$color-background-grad3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(135deg, $color-background-grad1 0%, $color-background-grad2 51%), $color-background-grad3 75%; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, $color-background-grad1 0%, $color-background-grad2 51%, $color-background-grad3 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, $color-background-grad1 0%, $color-background-grad2 51%, $color-background-grad3 75%); /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient(left, $color-background-grad1 0%, $color-background-grad2 51%, $color-background-grad3 75%); /* IE10+ */
+    background: linear-gradient(135deg, $color-background-grad1 0%, $color-background-grad2 51%, $color-background-grad3 75%); /* Standard syntax */
 }
 
-.content-wrapper {
-    color: white;
+.btn {
+    color: $color-text-base;
+    background-color: $color-background-grad3-complimentary;
+}
+
+a.btn {
+    color: $color-text-base;
+}
+
+.site-navigation {
+
+    a {
+        color: $color-text-base;
+    }
+
+    li {
+        background-color: $color-background-grad3-complimentary;
+    }
+}
+
+.site-header {
+    background-color: $color-background-grad3-chromatic;
 }

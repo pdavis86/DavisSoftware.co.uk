@@ -17,18 +17,22 @@
     <meta name="msapplication-config" content="~/Content/images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    @Html.Partial(DavisSoftware.Constants.Views.Partials.Molecules.HeaderScripts)
+
     <link rel="stylesheet" href="~/Content/styles/normalize.min.css" type="text/css">
     <link rel="stylesheet" href="~/Content/styles/main.min.css" type="text/css">
 </head>
 
 <body class="grad-main">
-    @Html.Partial(DavisSoftware.Constants.Views.Partials.Organisms.Header)
+    @*@Html.Partial(DavisSoftware.Constants.Views.Partials.Organisms.Header)*@
 
     <main class="content-wrapper">
         @RenderBody()
     </main>
 
     @Html.Partial(DavisSoftware.Constants.Views.Partials.Organisms.Footer)
+
+    @Html.Partial(DavisSoftware.Constants.Views.Partials.Molecules.FooterScripts)
 </body>
 
 </html>

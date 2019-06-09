@@ -130,14 +130,14 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Pages\Index.cshtml" />
-    <None Include="Properties\PublishProfiles\DavisSoftware - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\DavisSoftware - Web Deploy.pubxml" />
     <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Shared\Organisms\_Nav.cshtml" />
+    <Content Include="Views\Shared\Organisms\_Navigation.cshtml" />
     <Content Include="Views\Shared\Organisms\_Footer.cshtml" />
     <Content Include="Views\Shared\Organisms\_Header.cshtml" />
     <None Include="SCSS\**" />
     <Content Include="Views\Shared\Molecules\_ProgressBar.cshtml" />
+    <Content Include="Views\Shared\Molecules\_FooterScripts.cshtml" />
+    <Content Include="Views\Shared\Molecules\_HeaderScripts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -145,7 +145,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -12,12 +12,14 @@
             public static class Organisms
             {
                 public const string Header = "~/Views/Shared/Organisms/_Header.cshtml";
-                public const string Navigation = "~/Views/Shared/Organisms/_Nav.cshtml";
+                public const string Navigation = "~/Views/Shared/Organisms/_Navigation.cshtml";
                 public const string Footer = "~/Views/Shared/Organisms/_Footer.cshtml";
             }
 
             public static class Molecules
             {
+                public const string HeaderScripts = "~/Views/Shared/Molecules/_HeaderScripts.cshtml";
+                public const string FooterScripts = "~/Views/Shared/Molecules/_FooterScripts.cshtml";
                 public const string ProgressBar = "~/Views/Shared/Molecules/_ProgressBar.cshtml";
             }
         }
