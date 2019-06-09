@@ -9,9 +9,17 @@
 
         public static class Partials
         {
-            public const string Header = "~/Views/Shared/_Header.cshtml";
-            public const string Navigation = "~/Views/Shared/_Nav.cshtml";
-            public const string Footer = "~/Views/Shared/_Footer.cshtml";
+            public static class Organisms
+            {
+                public const string Header = "~/Views/Shared/Organisms/_Header.cshtml";
+                public const string Navigation = "~/Views/Shared/Organisms/_Nav.cshtml";
+                public const string Footer = "~/Views/Shared/Organisms/_Footer.cshtml";
+            }
+
+            public static class Molecules
+            {
+                public const string ProgressBar = "~/Views/Shared/Molecules/_ProgressBar.cshtml";
+            }
         }
 
     }

@@ -95,6 +95,8 @@
     <Content Include="BlogData\20170616AA.xml" />
     <Content Include="BlogData\20180115AA.xml" />
     <Content Include="BlogData\20180608AA.xml" />
+    <Content Include="Content\images\icons\github.svg" />
+    <Content Include="Content\images\icons\linkedin.svg" />
     <Content Include="Content\styles\main.min.css" />
     <Content Include="Content\styles\normalize.min.css" />
     <Content Include="Global.asax" />
@@ -106,49 +108,6 @@
     <Content Include="Content\images\favicons\favicon.ico" />
     <Content Include="Content\images\favicons\mstile-150x150.png" />
     <Content Include="Content\images\favicons\safari-pinned-tab.svg" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-120px-plus.png" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-32px.png" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-64px.png" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-Light-120px-plus.png" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-Light-32px.png" />
-    <Content Include="Content\images\GitHub\GitHub-Mark-Light-64px.png" />
-    <Content Include="Content\images\GitHub\GitHub_Logo.png" />
-    <Content Include="Content\images\GitHub\GitHub_Logo_White.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-101px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-101px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-108px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-108px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-115px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-115px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-121px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-121px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-128px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-128px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-14px.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-21px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-21px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-28px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-28px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-34px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-34px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-41px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-41px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-48px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-48px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-54px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-54px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-59px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-59px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-66px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-66px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-75px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-75px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-81px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-81px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-89px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-89px-TM.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-94px-R.png" />
-    <Content Include="Content\images\LinkedIn\In-Black-94px-TM.png" />
     <Content Include="Content\images\PaulDavis.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -161,6 +120,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BlogArticleModel.cs" />
+    <Compile Include="Models\ProgressBarModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -173,10 +133,11 @@
     <None Include="Properties\PublishProfiles\DavisSoftware - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\DavisSoftware - Web Deploy.pubxml" />
     <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Shared\_Nav.cshtml" />
-    <Content Include="Views\Shared\_Footer.cshtml" />
-    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\Organisms\_Nav.cshtml" />
+    <Content Include="Views\Shared\Organisms\_Footer.cshtml" />
+    <Content Include="Views\Shared\Organisms\_Header.cshtml" />
     <None Include="SCSS\**" />
+    <Content Include="Views\Shared\Molecules\_ProgressBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
