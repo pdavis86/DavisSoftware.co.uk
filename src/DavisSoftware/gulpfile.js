@@ -5,7 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin');
+//const imagemin = require('gulp-imagemin');
 
 sass.compiler = require('node-sass');
 
